@@ -1,0 +1,100 @@
+* {
+  font-family: fantasy;
+  text-align: center;
+}
+
+.container h3, h4 {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.place {
+  display: inline-block;
+  width: 45%;
+  height: 600px;
+  vertical-align: top;
+}
+
+.place2 {
+  display: inline-block;
+  width: 45%;
+  vertical-align: top;
+}
+
+.place3 {
+  height: 850px;
+}
+
+.choice {
+  margin: 2em;
+  padding: 1em;
+  display: inline-block;
+  width: 40%;
+  vertical-align: top;
+  background-color: rgba(0, 147, 255, 0.46);
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.errors {
+ margin: 2em;
+  padding: 1em;
+  background-color: rgba(255, 0, 0, 0.65);
+  border: 1px solid black;
+  border-radius: 5px;
+  color: #333;
+}
+
+#fini {
+  background: url(../images/fini.png)  no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-align: right;
+  color: white;
+}
+
+#cannon {
+  background: url(../images/cannon.png)  no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-align: right;
+}
+
+#home {
+  background: url(../images/home.png)  no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-align: right;
+  color: white;
+}
+
+a {
+  margin: 1em;
+}
+
+label, input {
+  font-size: large;
+}
+
+input[type=text] {    background-color: rgba(210, 0, 231, 0.41);
+    color: whitesmoke;
+    width: 335px;
+    padding-top: 5px;
+}
+
+h5 {
+  color: white;
+}
+
+#trip {
+  width: 50%;
+  background-color: rgba(150, 128, 11, 0.67);
+  margin-left: 20em;
+  font-weight: bolder;
+}

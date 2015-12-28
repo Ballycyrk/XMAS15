@@ -1,0 +1,122 @@
+<div id="home" class="place3">
+  <form name=getAway>
+    <div class="choice">
+      <h4>Who would you like to go on this vacation?</h4>
+      <div class="radio">
+        <label>
+          <input type="radio" ng-model="HC.vaca.guest" value="jesica" >
+          Just me please.
+        </label>
+      </div>
+      <div class="radio disabled">
+        <label>
+          <input type="radio" ng-model="HC.vaca.guest" value="me" disabled>
+          Me and my husband!
+        </label>
+      </div>
+      <div class="radio disabled">
+        <label>
+          <input type="radio" ng-model="HC.vaca.guest" value="myself" disabled>
+          My whole family!
+        </label>
+        <br>
+        <h5>It's a trick question you're going alone.</h5>
+      </div>
+    </div>
+    <div class="choice">
+      <h4>What is your favorite movie genre?</h4>
+      <div class="radio">
+        <label>
+          <input type="radio" ng-model="HC.vaca.movie" value="comedy" >
+          Comedy
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" ng-model="HC.vaca.movie" value="action" >
+          Action!
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" ng-model="HC.vaca.movie" value="romance" >
+          Romance
+        </label>
+        <br>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" ng-model="HC.vaca.movie" value="other" >
+          Other
+        </label>
+        <input ng-if="(HC.vaca.movie == 'other')" type="text" ng-model="HC.vaca.genre" />
+        <br>
+      </div>
+    </div>
+    <div class="choice">
+      <h4>What would you like for dinner?</h4>
+      <div class="radio">
+        <label>
+          <input type="radio" ng-model="HC.vaca.dinner" value="lasagna" >
+          Spinach Lasagna
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" ng-model="HC.vaca.dinner" value="steak" >
+          Steak
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" ng-model="HC.vaca.dinner" value="enchiladas" >
+          Chicken Enchiladas
+        </label>
+        <br>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" ng-model="HC.vaca.dinner" value="other" >
+          Other (including Ordering-In)
+        </label>
+        <input ng-if="(HC.vaca.dinner == 'other')" type="text" ng-model="HC.vaca.mypick" />
+        <br>
+      </div>
+    </div>
+    <div class="choice">
+      <h4>What would you like to drink?</h4>
+      <div class="radio">
+        <label>
+          <input type="radio" ng-model="HC.vaca.drink" value="red" >
+          Red Wine
+        </label>
+        <input ng-if="(HC.vaca.drink == 'red')" type="text" ng-model="HC.vaca.myRed" placeholder="Write kind of reds you like here." />
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" ng-model="HC.vaca.drink" value="white" >
+          White Wine
+        </label>
+        <input ng-if="(HC.vaca.drink == 'white')" type="text" ng-model="HC.vaca.myWhite" placeholder="Write kind of whites you like here." />
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" ng-model="HC.vaca.drink" value="beer" >
+          Beer
+        </label>
+        <input ng-if="(HC.vaca.drink == 'beer')" type="text" ng-model="HC.vaca.myBeer" placeholder="Write brand and style of beer here." />
+        <br>
+      </div>
+    </div>
+    <button class="btn btn-lg btn-warning" ng-click="HC.create()">Create My Vacation!</button>
+  </form>
+  <div class="errors" ng-if="(HC.errors)">
+    <h1>NO NO NO!!!</h1>
+    <h2 ng-repeat="error in HC.errors">
+      <span ng-bind="error"></span>
+    </h2>
+  </div>
+</div>
+
+
+
